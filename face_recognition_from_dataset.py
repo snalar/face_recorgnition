@@ -3,7 +3,6 @@ import face_recognition
 import pickle
 import cv2
 import os
- 
 # в директории Images хранятся папки со всеми изображениями
 imagePaths = list(paths.list_images('Images'))
 knownEncodings = []
@@ -30,4 +29,5 @@ data = {"encodings": knownEncodings, "names": knownNames}
 f = open("face_enc", "wb")
 f.write(pickle.dumps(data))
 f.close()
+
 print("Complete!")
