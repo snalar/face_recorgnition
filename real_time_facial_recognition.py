@@ -4,7 +4,6 @@ import pickle
 import time
 import cv2
 import os   
- 
 # find path of xml file containing haarcascade file 
 cascPathface = os.path.dirname(
  cv2.__file__) + "/data/haarcascade_frontalface_alt2.xml"
@@ -71,4 +70,5 @@ while True:
         break
 
 video_capture.release()
+
 cv2.destroyAllWindows()
