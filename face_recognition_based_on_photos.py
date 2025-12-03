@@ -6,7 +6,7 @@ import cv2
 data = pickle.loads(open('face_enc', "rb").read())
 
 # Загрузка изображения
-image = cv2.imread('test1.jpg')
+image = cv2.imread('VP_DM.jpg')
 rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 # Поиск лиц и их энкодингов
