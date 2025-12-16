@@ -33,7 +33,7 @@ while True:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
         # Автосохранение лица каждые 0.5 секунды
-        if time.time() - last_save_time > 0.5:
+        if time.time() - last_save_time > 1:
             face_img = frame[y:y + h, x:x + w]
             img_path = f"{dataset_path}/{counter}.jpg"
             cv2.imwrite(img_path, face_img)

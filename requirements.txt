@@ -1,0 +1,6 @@
+tk
+pillow
+opencv-python
+face-recognition
+imutils
+numpy
